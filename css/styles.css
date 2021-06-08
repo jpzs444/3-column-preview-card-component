@@ -3,7 +3,8 @@
     --clr-dark-cyan: hsl(184, 100%, 22%);
     --clr-very-dark-cyan: hsl(179, 100%, 13%);
     --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
-    --clr-light-gray: hsl(0, 0%, 95%);
+    --clr-very-light-gray: hsl(0, 0%, 95%);
+    --clr-black: #333;
     --ff-lexend-deca: 'Lexend Deca', sans-serif;
     --ff-big-shoulders: 'Big Shoulders Display', cursive;
     --fw-regular: 400;
@@ -25,12 +26,37 @@ body {
     font-weight: var(--fw-regular);
     font-size: 1rem;
     line-height: 1.6;
+    background-color: var(--clr-very-light-gray);
     /* color: var(--clr-transparent-white); */
+}
+
+.split h1 {
+    font-family: var(--ff-big-shoulders);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    /* color: var(--clr-very-light-gray) */
+}
+
+.split a {
+    text-decoration: none;
+}
+
+.sedans a {
+    color: var(--clr-bright-orange);
+}
+
+.suvs a {
+    color: var(--clr-dark-cyan);
+}
+
+.luxury a {
+    color: var(--clr-very-dark-cyan);
 }
 
 .attribution { 
     font-size: 11px; 
     text-align: center;
+    color: var(--clr-black);
 }
 
 .attribution a {
