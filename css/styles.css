@@ -67,7 +67,7 @@ body {
 }
 
 .split p {
-    max-width: 100%;
+    max-width: 96%;
     margin-top: 1rem;
 }
 
@@ -104,7 +104,7 @@ body {
     border-radius: 2rem;
     background-color: var(--clr-very-light-gray);
     margin-top: 1.5rem;
-    padding: 0.65em 2em;
+    padding: 0.65em 1.89em;
     border: 2px solid var(--clr-very-light-gray);
     cursor: pointer;
 }
@@ -120,3 +120,23 @@ body {
     color: hsl(228, 45%, 44%);
     text-decoration: none;
 }
+
+@media only screen and (min-width: 48em) {    
+    .container {
+        min-height: 100vh;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: row;
+        max-width: 57.5rem;
+    }
+
+    .split {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .split p {
+        flex: 1;
+    }
