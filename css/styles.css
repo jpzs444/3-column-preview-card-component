@@ -1,5 +1,36 @@
+:root {
+    --clr-bright-orange: hsl(31, 77%, 52%);
+    --clr-dark-cyan: hsl(184, 100%, 22%);
+    --clr-very-dark-cyan: hsl(179, 100%, 13%);
+    --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --clr-light-gray: hsl(0, 0%, 95%);
+    --ff-lexend-deca: 'Lexend Deca', sans-serif;
+    --ff-big-shoulders: 'Big Shoulders Display', cursive;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--ff-lexend-deca);
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    line-height: 1.6;
+    /* color: var(--clr-transparent-white); */
+}
+
 .attribution { 
-    font-size: 11px; text-align: center;
+    font-size: 11px; 
+    text-align: center;
 }
 
 .attribution a {
