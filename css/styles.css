@@ -109,6 +109,11 @@ body {
     cursor: pointer;
 }
 
+.button:hover {
+    background-color: transparent;
+    color: var(--clr-very-light-gray);
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center;
