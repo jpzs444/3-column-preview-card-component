@@ -21,24 +21,66 @@ html {
     box-sizing: inherit;
 }
 
+h1, 
+p,
+a {
+    margin: 0;
+}
+
 body {
     font-family: var(--ff-lexend-deca);
     font-weight: var(--fw-regular);
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.905rem;
+    line-height: 1.8;
     background-color: var(--clr-very-light-gray);
-    /* color: var(--clr-transparent-white); */
+    color: var(--clr-transparent-white);
+    margin: 0;
+}
+
+.container {
+    max-width: 100vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    margin: 0 1.5rem 0;
+}
+
+.split {
+    padding: 3rem 3.0625rem 2.5rem; 
 }
 
 .split h1 {
     font-family: var(--ff-big-shoulders);
     font-weight: var(--fw-bold);
+    font-size: 2.125rem;
     text-transform: uppercase;
-    /* color: var(--clr-very-light-gray) */
+    color: var(--clr-very-light-gray);
+    margin-top: 1.7rem;
+}
+
+.split p {
+    max-width: 100%;
+    margin-top: 1rem;
 }
 
 .split a {
     text-decoration: none;
+}
+
+.sedans {
+    background-color: var(--clr-bright-orange);
+}
+
+.suvs {
+    background-color: var(--clr-dark-cyan);
+}
+
+.luxury {
+    background-color: var(--clr-very-dark-cyan);
 }
 
 .sedans a {
@@ -53,12 +95,24 @@ body {
     color: var(--clr-very-dark-cyan);
 }
 
+.button {
+    display: inline-block;
+    border-radius: 2rem;
+    background-color: var(--clr-very-light-gray);
+    margin-top: 1.5rem;
+    padding: 0.65em 2em;
+    border: 2px solid var(--clr-very-light-gray);
+    cursor: pointer;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center;
     color: var(--clr-black);
+    line-height: 1.5;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    text-decoration: none;
 }
